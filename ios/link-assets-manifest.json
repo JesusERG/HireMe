@@ -1,0 +1,85 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/AzeretMono-Black.ttf",
+      "sha1": "8a495f2801b5e266333f449aee01b5c92e221ffe"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-BlackItalic.ttf",
+      "sha1": "873a90a1d198c1902632b43bea5eab6e8d8f6952"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-Bold.ttf",
+      "sha1": "1091abdfe7ef116bc22c4baae5521077de12ad18"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-BoldItalic.ttf",
+      "sha1": "1f61dcc4e31e14a79c94d13263eae6622235410a"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-ExtraBold.ttf",
+      "sha1": "ac227dd97a9595cbb1aef61db314f936a8d47e39"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-ExtraBoldItalic.ttf",
+      "sha1": "0a95a311c58987e3b2455984244f84f44a064bec"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-ExtraLight.ttf",
+      "sha1": "86a3c2ef352b5f5c0b3eefd47df4d23ad92f2722"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-ExtraLightItalic.ttf",
+      "sha1": "ca66d743b95d9338a1f7b854d1702bdc554b0231"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-Italic-VariableFont_wght.ttf",
+      "sha1": "91426aeb71e998eadc1d68161f0985206cc693a0"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-Italic.ttf",
+      "sha1": "f3d0d7fa96fd77544614bd4233bd15251ffb933c"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-Light.ttf",
+      "sha1": "a67458cc5cc8f5a5f82350d374d1f987ba0024a0"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-LightItalic.ttf",
+      "sha1": "6d18d0e3b3c1723c0a31e257874b0aaef0615bb9"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-Medium.ttf",
+      "sha1": "d7370967fff5d79c1b2b15f1d117c655b435e177"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-MediumItalic.ttf",
+      "sha1": "fc0ed92cabc818bb8caa26618c1806334fb99217"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-Regular.ttf",
+      "sha1": "b7cb361a032c7615a8fbee5400e66d55cae8c39b"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-SemiBold.ttf",
+      "sha1": "6d761737d3494e7536f38384d20c410477a5896c"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-SemiBoldItalic.ttf",
+      "sha1": "b7b05d09093892880657621364af2cde67b09e97"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-Thin.ttf",
+      "sha1": "b97c7e4c85cbb7d8d514a16074fc432816f63ed4"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-ThinItalic.ttf",
+      "sha1": "87608ec20d8d09835cab06fcadee6c3aaa26bed3"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-VariableFont_wght.ttf",
+      "sha1": "2d1d2d0045ef9433bed3df70dbc72dbf6e612e92"
+    }
+  ]
+}

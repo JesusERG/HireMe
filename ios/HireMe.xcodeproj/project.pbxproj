@@ -7,24 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		008E8338EF31447C8B5888E9 /* AzeretMono-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D7036E27851431897D8A901 /* AzeretMono-ExtraLight.ttf */; };
 		042C98C8B8828C4BCE7E6D5E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		0C80B921A6F3F58F76C31292 /* libPods-HireMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-HireMe.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		1CF855981D1C41A6840E2A02 /* AzeretMono-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C140A1E003124AF682D6B43C /* AzeretMono-SemiBold.ttf */; };
+		229E75C9CAD145F38D07EDFC /* AzeretMono-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC832EE682144E1BF89133D /* AzeretMono-LightItalic.ttf */; };
+		2EE016A1DDBD498DAF816F88 /* AzeretMono-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 276E5EDC754D40E8B276330D /* AzeretMono-Italic-VariableFont_wght.ttf */; };
+		3ECF9272191E4154B830A3F5 /* AzeretMono-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BBC5297A9884A85A08E5BC4 /* AzeretMono-Light.ttf */; };
+		4FDC55DA76FC4FE4B0F722F1 /* AzeretMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0867F2B545BA48318C39CA01 /* AzeretMono-Medium.ttf */; };
+		565950FAC8EB4007BCF699A5 /* AzeretMono-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96016DF820D14D6290F2E22A /* AzeretMono-ExtraBoldItalic.ttf */; };
+		66A287F3232644EE8C50892C /* AzeretMono-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82417C8D0DD5480A950EA33C /* AzeretMono-BoldItalic.ttf */; };
+		6F98511294074EAF8C1B8A01 /* AzeretMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C8D0D864FCD475D9F219854 /* AzeretMono-Bold.ttf */; };
+		70A19AD4DC244519AF64A373 /* AzeretMono-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E05CFF427974A95A72D4EEE /* AzeretMono-Italic.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
+		7F3FB426136142FA8A3AEF6B /* AzeretMono-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FD2F9B9ABBC4AE5875FD929 /* AzeretMono-ThinItalic.ttf */; };
+		80E3E327817A48A39B56AC38 /* AzeretMono-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45116ACC4CEA4291857E2378 /* AzeretMono-MediumItalic.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9CEFCD18C8EC483DB1D6EF6C /* AzeretMono-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E41802636F844D8AEA79A36 /* AzeretMono-Thin.ttf */; };
+		9FB747F5283C49BAA0E6988A /* AzeretMono-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25044EAA4EA449A09E55AAE6 /* AzeretMono-SemiBoldItalic.ttf */; };
+		B8D717D07BC24281B2F21EEC /* AzeretMono-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD4B2B141BF54639A3E081BB /* AzeretMono-VariableFont_wght.ttf */; };
+		C48F24F3B53042F293A5A79B /* AzeretMono-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5358B0B32DF74538B914E225 /* AzeretMono-ExtraBold.ttf */; };
+		CF2C595640C2415681DEB97C /* AzeretMono-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8AE959DC3D64350991F9D9D /* AzeretMono-Black.ttf */; };
+		D5F117922BF242FB8AFDEC1C /* AzeretMono-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF8984EB8C23401582C328BB /* AzeretMono-BlackItalic.ttf */; };
+		F53B27F997C24B36909E8E9E /* AzeretMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 027306A813A74DF18C2DB113 /* AzeretMono-Regular.ttf */; };
+		FBA8A52048464C4E87467FC8 /* AzeretMono-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DC465591E3F4B1E9009DD50 /* AzeretMono-ExtraLightItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		027306A813A74DF18C2DB113 /* AzeretMono-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Regular.ttf"; path = "../assets/fonts/AzeretMono-Regular.ttf"; sourceTree = "<group>"; };
+		0867F2B545BA48318C39CA01 /* AzeretMono-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Medium.ttf"; path = "../assets/fonts/AzeretMono-Medium.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* HireMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HireMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HireMe/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = HireMe/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = HireMe/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		25044EAA4EA449A09E55AAE6 /* AzeretMono-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-SemiBoldItalic.ttf"; path = "../assets/fonts/AzeretMono-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		276E5EDC754D40E8B276330D /* AzeretMono-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Italic-VariableFont_wght.ttf"; path = "../assets/fonts/AzeretMono-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-HireMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HireMe.debug.xcconfig"; path = "Target Support Files/Pods-HireMe/Pods-HireMe.debug.xcconfig"; sourceTree = "<group>"; };
+		3BBC5297A9884A85A08E5BC4 /* AzeretMono-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Light.ttf"; path = "../assets/fonts/AzeretMono-Light.ttf"; sourceTree = "<group>"; };
+		45116ACC4CEA4291857E2378 /* AzeretMono-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-MediumItalic.ttf"; path = "../assets/fonts/AzeretMono-MediumItalic.ttf"; sourceTree = "<group>"; };
+		5358B0B32DF74538B914E225 /* AzeretMono-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-ExtraBold.ttf"; path = "../assets/fonts/AzeretMono-ExtraBold.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-HireMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HireMe.release.xcconfig"; path = "Target Support Files/Pods-HireMe/Pods-HireMe.release.xcconfig"; sourceTree = "<group>"; };
+		5D7036E27851431897D8A901 /* AzeretMono-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-ExtraLight.ttf"; path = "../assets/fonts/AzeretMono-ExtraLight.ttf"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-HireMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HireMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = HireMe/AppDelegate.swift; sourceTree = "<group>"; };
+		7E05CFF427974A95A72D4EEE /* AzeretMono-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Italic.ttf"; path = "../assets/fonts/AzeretMono-Italic.ttf"; sourceTree = "<group>"; };
+		7FD2F9B9ABBC4AE5875FD929 /* AzeretMono-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-ThinItalic.ttf"; path = "../assets/fonts/AzeretMono-ThinItalic.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = HireMe/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82417C8D0DD5480A950EA33C /* AzeretMono-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-BoldItalic.ttf"; path = "../assets/fonts/AzeretMono-BoldItalic.ttf"; sourceTree = "<group>"; };
+		96016DF820D14D6290F2E22A /* AzeretMono-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-ExtraBoldItalic.ttf"; path = "../assets/fonts/AzeretMono-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		9C8D0D864FCD475D9F219854 /* AzeretMono-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Bold.ttf"; path = "../assets/fonts/AzeretMono-Bold.ttf"; sourceTree = "<group>"; };
+		9DC465591E3F4B1E9009DD50 /* AzeretMono-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-ExtraLightItalic.ttf"; path = "../assets/fonts/AzeretMono-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		9E41802636F844D8AEA79A36 /* AzeretMono-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Thin.ttf"; path = "../assets/fonts/AzeretMono-Thin.ttf"; sourceTree = "<group>"; };
+		B8AE959DC3D64350991F9D9D /* AzeretMono-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Black.ttf"; path = "../assets/fonts/AzeretMono-Black.ttf"; sourceTree = "<group>"; };
+		C140A1E003124AF682D6B43C /* AzeretMono-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-SemiBold.ttf"; path = "../assets/fonts/AzeretMono-SemiBold.ttf"; sourceTree = "<group>"; };
+		CFC832EE682144E1BF89133D /* AzeretMono-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-LightItalic.ttf"; path = "../assets/fonts/AzeretMono-LightItalic.ttf"; sourceTree = "<group>"; };
+		DF8984EB8C23401582C328BB /* AzeretMono-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-BlackItalic.ttf"; path = "../assets/fonts/AzeretMono-BlackItalic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FD4B2B141BF54639A3E081BB /* AzeretMono-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-VariableFont_wght.ttf"; path = "../assets/fonts/AzeretMono-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +100,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		749D8E0300374473B52CC5CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				276E5EDC754D40E8B276330D /* AzeretMono-Italic-VariableFont_wght.ttf */,
+				FD4B2B141BF54639A3E081BB /* AzeretMono-VariableFont_wght.ttf */,
+				B8AE959DC3D64350991F9D9D /* AzeretMono-Black.ttf */,
+				DF8984EB8C23401582C328BB /* AzeretMono-BlackItalic.ttf */,
+				9C8D0D864FCD475D9F219854 /* AzeretMono-Bold.ttf */,
+				82417C8D0DD5480A950EA33C /* AzeretMono-BoldItalic.ttf */,
+				5358B0B32DF74538B914E225 /* AzeretMono-ExtraBold.ttf */,
+				96016DF820D14D6290F2E22A /* AzeretMono-ExtraBoldItalic.ttf */,
+				5D7036E27851431897D8A901 /* AzeretMono-ExtraLight.ttf */,
+				9DC465591E3F4B1E9009DD50 /* AzeretMono-ExtraLightItalic.ttf */,
+				7E05CFF427974A95A72D4EEE /* AzeretMono-Italic.ttf */,
+				3BBC5297A9884A85A08E5BC4 /* AzeretMono-Light.ttf */,
+				CFC832EE682144E1BF89133D /* AzeretMono-LightItalic.ttf */,
+				0867F2B545BA48318C39CA01 /* AzeretMono-Medium.ttf */,
+				45116ACC4CEA4291857E2378 /* AzeretMono-MediumItalic.ttf */,
+				027306A813A74DF18C2DB113 /* AzeretMono-Regular.ttf */,
+				C140A1E003124AF682D6B43C /* AzeretMono-SemiBold.ttf */,
+				25044EAA4EA449A09E55AAE6 /* AzeretMono-SemiBoldItalic.ttf */,
+				9E41802636F844D8AEA79A36 /* AzeretMono-Thin.ttf */,
+				7FD2F9B9ABBC4AE5875FD929 /* AzeretMono-ThinItalic.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +143,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				749D8E0300374473B52CC5CC /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -161,6 +230,26 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				042C98C8B8828C4BCE7E6D5E /* PrivacyInfo.xcprivacy in Resources */,
+				2EE016A1DDBD498DAF816F88 /* AzeretMono-Italic-VariableFont_wght.ttf in Resources */,
+				B8D717D07BC24281B2F21EEC /* AzeretMono-VariableFont_wght.ttf in Resources */,
+				CF2C595640C2415681DEB97C /* AzeretMono-Black.ttf in Resources */,
+				D5F117922BF242FB8AFDEC1C /* AzeretMono-BlackItalic.ttf in Resources */,
+				6F98511294074EAF8C1B8A01 /* AzeretMono-Bold.ttf in Resources */,
+				66A287F3232644EE8C50892C /* AzeretMono-BoldItalic.ttf in Resources */,
+				C48F24F3B53042F293A5A79B /* AzeretMono-ExtraBold.ttf in Resources */,
+				565950FAC8EB4007BCF699A5 /* AzeretMono-ExtraBoldItalic.ttf in Resources */,
+				008E8338EF31447C8B5888E9 /* AzeretMono-ExtraLight.ttf in Resources */,
+				FBA8A52048464C4E87467FC8 /* AzeretMono-ExtraLightItalic.ttf in Resources */,
+				70A19AD4DC244519AF64A373 /* AzeretMono-Italic.ttf in Resources */,
+				3ECF9272191E4154B830A3F5 /* AzeretMono-Light.ttf in Resources */,
+				229E75C9CAD145F38D07EDFC /* AzeretMono-LightItalic.ttf in Resources */,
+				4FDC55DA76FC4FE4B0F722F1 /* AzeretMono-Medium.ttf in Resources */,
+				80E3E327817A48A39B56AC38 /* AzeretMono-MediumItalic.ttf in Resources */,
+				F53B27F997C24B36909E8E9E /* AzeretMono-Regular.ttf in Resources */,
+				1CF855981D1C41A6840E2A02 /* AzeretMono-SemiBold.ttf in Resources */,
+				9FB747F5283C49BAA0E6988A /* AzeretMono-SemiBoldItalic.ttf in Resources */,
+				9CEFCD18C8EC483DB1D6EF6C /* AzeretMono-Thin.ttf in Resources */,
+				7F3FB426136142FA8A3AEF6B /* AzeretMono-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
