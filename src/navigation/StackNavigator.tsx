@@ -13,7 +13,11 @@ const StackNavigator = () => {
         component={Splash}
         options={{ headerShown: false }}
       />
-      <Stack.Screen name="Feed" component={Feed} />
+      <Stack.Screen
+        name="Feed"
+        component={Feed}
+        options={{ headerShown: false, animation: 'fade_from_bottom' }}
+      />
     </Stack.Navigator>
   );
 };
