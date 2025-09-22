@@ -1,7 +1,7 @@
 import { Text, StyleSheet, View } from 'react-native';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { RootStackParamList } from '../utils/types/NavigationTypes';
+import { RootStackParamList } from '../utils/types/navigationTypes';
 import { useEffect, useState } from 'react';
 import Animated, { css } from 'react-native-reanimated';
 import Svg, { Path } from 'react-native-svg';
