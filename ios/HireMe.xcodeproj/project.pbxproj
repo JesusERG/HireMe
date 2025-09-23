@@ -35,36 +35,36 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		027306A813A74DF18C2DB113 /* AzeretMono-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Regular.ttf"; path = "../assets/fonts/AzeretMono-Regular.ttf"; sourceTree = "<group>"; };
-		0867F2B545BA48318C39CA01 /* AzeretMono-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Medium.ttf"; path = "../assets/fonts/AzeretMono-Medium.ttf"; sourceTree = "<group>"; };
+		027306A813A74DF18C2DB113 /* AzeretMono-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Regular.ttf"; path = "../assets/fonts/AzeretMono-Regular.ttf"; sourceTree = "<group>"; };
+		0867F2B545BA48318C39CA01 /* AzeretMono-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Medium.ttf"; path = "../assets/fonts/AzeretMono-Medium.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* HireMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HireMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HireMe/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = HireMe/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = HireMe/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		25044EAA4EA449A09E55AAE6 /* AzeretMono-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-SemiBoldItalic.ttf"; path = "../assets/fonts/AzeretMono-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		276E5EDC754D40E8B276330D /* AzeretMono-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Italic-VariableFont_wght.ttf"; path = "../assets/fonts/AzeretMono-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		25044EAA4EA449A09E55AAE6 /* AzeretMono-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-SemiBoldItalic.ttf"; path = "../assets/fonts/AzeretMono-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		276E5EDC754D40E8B276330D /* AzeretMono-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Italic-VariableFont_wght.ttf"; path = "../assets/fonts/AzeretMono-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-HireMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HireMe.debug.xcconfig"; path = "Target Support Files/Pods-HireMe/Pods-HireMe.debug.xcconfig"; sourceTree = "<group>"; };
-		3BBC5297A9884A85A08E5BC4 /* AzeretMono-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Light.ttf"; path = "../assets/fonts/AzeretMono-Light.ttf"; sourceTree = "<group>"; };
-		45116ACC4CEA4291857E2378 /* AzeretMono-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-MediumItalic.ttf"; path = "../assets/fonts/AzeretMono-MediumItalic.ttf"; sourceTree = "<group>"; };
-		5358B0B32DF74538B914E225 /* AzeretMono-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-ExtraBold.ttf"; path = "../assets/fonts/AzeretMono-ExtraBold.ttf"; sourceTree = "<group>"; };
+		3BBC5297A9884A85A08E5BC4 /* AzeretMono-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Light.ttf"; path = "../assets/fonts/AzeretMono-Light.ttf"; sourceTree = "<group>"; };
+		45116ACC4CEA4291857E2378 /* AzeretMono-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-MediumItalic.ttf"; path = "../assets/fonts/AzeretMono-MediumItalic.ttf"; sourceTree = "<group>"; };
+		5358B0B32DF74538B914E225 /* AzeretMono-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-ExtraBold.ttf"; path = "../assets/fonts/AzeretMono-ExtraBold.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-HireMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HireMe.release.xcconfig"; path = "Target Support Files/Pods-HireMe/Pods-HireMe.release.xcconfig"; sourceTree = "<group>"; };
-		5D7036E27851431897D8A901 /* AzeretMono-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-ExtraLight.ttf"; path = "../assets/fonts/AzeretMono-ExtraLight.ttf"; sourceTree = "<group>"; };
+		5D7036E27851431897D8A901 /* AzeretMono-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-ExtraLight.ttf"; path = "../assets/fonts/AzeretMono-ExtraLight.ttf"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-HireMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HireMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = HireMe/AppDelegate.swift; sourceTree = "<group>"; };
-		7E05CFF427974A95A72D4EEE /* AzeretMono-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Italic.ttf"; path = "../assets/fonts/AzeretMono-Italic.ttf"; sourceTree = "<group>"; };
-		7FD2F9B9ABBC4AE5875FD929 /* AzeretMono-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-ThinItalic.ttf"; path = "../assets/fonts/AzeretMono-ThinItalic.ttf"; sourceTree = "<group>"; };
+		7E05CFF427974A95A72D4EEE /* AzeretMono-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Italic.ttf"; path = "../assets/fonts/AzeretMono-Italic.ttf"; sourceTree = "<group>"; };
+		7FD2F9B9ABBC4AE5875FD929 /* AzeretMono-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-ThinItalic.ttf"; path = "../assets/fonts/AzeretMono-ThinItalic.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = HireMe/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		82417C8D0DD5480A950EA33C /* AzeretMono-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-BoldItalic.ttf"; path = "../assets/fonts/AzeretMono-BoldItalic.ttf"; sourceTree = "<group>"; };
-		96016DF820D14D6290F2E22A /* AzeretMono-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-ExtraBoldItalic.ttf"; path = "../assets/fonts/AzeretMono-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		9C8D0D864FCD475D9F219854 /* AzeretMono-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Bold.ttf"; path = "../assets/fonts/AzeretMono-Bold.ttf"; sourceTree = "<group>"; };
-		9DC465591E3F4B1E9009DD50 /* AzeretMono-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-ExtraLightItalic.ttf"; path = "../assets/fonts/AzeretMono-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		9E41802636F844D8AEA79A36 /* AzeretMono-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Thin.ttf"; path = "../assets/fonts/AzeretMono-Thin.ttf"; sourceTree = "<group>"; };
-		B8AE959DC3D64350991F9D9D /* AzeretMono-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Black.ttf"; path = "../assets/fonts/AzeretMono-Black.ttf"; sourceTree = "<group>"; };
-		C140A1E003124AF682D6B43C /* AzeretMono-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-SemiBold.ttf"; path = "../assets/fonts/AzeretMono-SemiBold.ttf"; sourceTree = "<group>"; };
-		CFC832EE682144E1BF89133D /* AzeretMono-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-LightItalic.ttf"; path = "../assets/fonts/AzeretMono-LightItalic.ttf"; sourceTree = "<group>"; };
-		DF8984EB8C23401582C328BB /* AzeretMono-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-BlackItalic.ttf"; path = "../assets/fonts/AzeretMono-BlackItalic.ttf"; sourceTree = "<group>"; };
+		82417C8D0DD5480A950EA33C /* AzeretMono-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-BoldItalic.ttf"; path = "../assets/fonts/AzeretMono-BoldItalic.ttf"; sourceTree = "<group>"; };
+		96016DF820D14D6290F2E22A /* AzeretMono-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-ExtraBoldItalic.ttf"; path = "../assets/fonts/AzeretMono-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		9C8D0D864FCD475D9F219854 /* AzeretMono-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Bold.ttf"; path = "../assets/fonts/AzeretMono-Bold.ttf"; sourceTree = "<group>"; };
+		9DC465591E3F4B1E9009DD50 /* AzeretMono-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-ExtraLightItalic.ttf"; path = "../assets/fonts/AzeretMono-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		9E41802636F844D8AEA79A36 /* AzeretMono-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Thin.ttf"; path = "../assets/fonts/AzeretMono-Thin.ttf"; sourceTree = "<group>"; };
+		B8AE959DC3D64350991F9D9D /* AzeretMono-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-Black.ttf"; path = "../assets/fonts/AzeretMono-Black.ttf"; sourceTree = "<group>"; };
+		C140A1E003124AF682D6B43C /* AzeretMono-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-SemiBold.ttf"; path = "../assets/fonts/AzeretMono-SemiBold.ttf"; sourceTree = "<group>"; };
+		CFC832EE682144E1BF89133D /* AzeretMono-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-LightItalic.ttf"; path = "../assets/fonts/AzeretMono-LightItalic.ttf"; sourceTree = "<group>"; };
+		DF8984EB8C23401582C328BB /* AzeretMono-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-BlackItalic.ttf"; path = "../assets/fonts/AzeretMono-BlackItalic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FD4B2B141BF54639A3E081BB /* AzeretMono-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-VariableFont_wght.ttf"; path = "../assets/fonts/AzeretMono-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		FD4B2B141BF54639A3E081BB /* AzeretMono-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AzeretMono-VariableFont_wght.ttf"; path = "../assets/fonts/AzeretMono-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +125,6 @@
 				7FD2F9B9ABBC4AE5875FD929 /* AzeretMono-ThinItalic.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -280,9 +279,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HireMe/Pods-HireMe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HireMe/Pods-HireMe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -319,9 +322,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HireMe/Pods-HireMe-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HireMe/Pods-HireMe-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -364,8 +371,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = HireMe;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -391,7 +401,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = HireMe;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
