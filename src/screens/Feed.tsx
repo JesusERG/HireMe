@@ -1,12 +1,8 @@
-import { Text, View, Button } from 'react-native';
+import { Text, Button } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useSelector, useDispatch } from 'react-redux';
+import { StyleSheet } from 'react-native-unistyles';
 
 const Feed = () => {
-  const { theme } = useSelector(state => state.theme);
-
-  console.log('theme: ', theme);
-
   return (
     <SafeAreaView>
       <Text>Feed</Text>
@@ -14,6 +10,12 @@ const Feed = () => {
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create(theme => ({
+  container: {
+    backgroundColor: theme.colors.background,
+  },
+}));
 
 export default Feed;
 

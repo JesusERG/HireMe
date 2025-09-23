@@ -1,6 +1,9 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../utils/types/navigationTypes';
+
 import Splash from '../screens/Splash';
+import Login from '../screens/Login';
+
 import Feed from '../screens/Feed';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -11,6 +14,11 @@ const StackNavigator = () => {
       <Stack.Screen
         name="Splash"
         component={Splash}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Login"
+        component={Login}
         options={{ headerShown: false }}
       />
       <Stack.Screen

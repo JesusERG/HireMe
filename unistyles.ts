@@ -1,0 +1,140 @@
+import { StyleSheet } from 'react-native-unistyles';
+
+const lightTheme = {
+  colors: {
+    primary: '#415F91',
+    surfaceTint: '#415F91',
+    onPrimary: '#FFFFFF',
+    primaryContainer: '#D6E3FF',
+    onPrimaryContainer: '#284777',
+    secondary: '#565F71',
+    onSecondary: '#FFFFFF',
+    secondaryContainer: '#DAE2F9',
+    onSecondaryContainer: '#3E4759',
+    tertiary: '#49672E',
+    onTertiary: '#FFFFFF',
+    tertiaryContainer: '#CAEEA6',
+    onTertiaryContainer: '#324E18',
+    error: '#BA1A1A',
+    onError: '#FFFFFF',
+    errorContainer: '#FFDAD6',
+    onErrorContainer: '#93000A',
+    background: '#F9F9FF',
+    onBackground: '#191C20',
+    surface: '#F9F9FF',
+    onSurface: '#191C20',
+    surfaceVariant: '#E0E2EC',
+    onSurfaceVariant: '#44474E',
+    outline: '#74777F',
+    outlineVariant: '#C4C6D0',
+    shadow: '#000000',
+    scrim: '#000000',
+    inverseSurface: '#2E3036',
+    inverseOnSurface: '#F0F0F7',
+    inversePrimary: '#AAC7FF',
+    primaryFixed: '#D6E3FF',
+    onPrimaryFixed: '#001B3E',
+    primaryFixedDim: '#AAC7FF',
+    onPrimaryFixedVariant: '#284777',
+    secondaryFixed: '#DAE2F9',
+    onSecondaryFixed: '#131C2B',
+    secondaryFixedDim: '#BEC6DC',
+    onSecondaryFixedVariant: '#3E4759',
+    tertiaryFixed: '#CAEEA6',
+    onTertiaryFixed: '#0D2000',
+    tertiaryFixedDim: '#AFD18C',
+    onTertiaryFixedVariant: '#324E18',
+    surfaceDim: '#D9D9E0',
+    surfaceBright: '#F9F9FF',
+    surfaceContainerLowest: '#FFFFFF',
+    surfaceContainerLow: '#F3F3FA',
+    surfaceContainer: '#EDEDF4',
+    surfaceContainerHigh: '#E7E8EE',
+    surfaceContainerHighest: '#E2E2E9',
+  },
+  gap: (v: number) => v * 8,
+};
+
+const darkTheme = {
+  colors: {
+    primary: '#AAC7FF',
+    surfaceTint: '#AAC7FF',
+    onPrimary: '#0A305F',
+    primaryContainer: '#284777',
+    onPrimaryContainer: '#D6E3FF',
+    secondary: '#BEC6DC',
+    onSecondary: '#283141',
+    secondaryContainer: '#3E4759',
+    onSecondaryContainer: '#DAE2F9',
+    tertiary: '#AFD18C',
+    onTertiary: '#1D3703',
+    tertiaryContainer: '#324E18',
+    onTertiaryContainer: '#CAEEA6',
+    error: '#FFB4AB',
+    onError: '#690005',
+    errorContainer: '#93000A',
+    onErrorContainer: '#FFDAD6',
+    background: '#111318',
+    onBackground: '#E2E2E9',
+    surface: '#111318',
+    onSurface: '#E2E2E9',
+    surfaceVariant: '#44474E',
+    onSurfaceVariant: '#C4C6D0',
+    outline: '#8E9099',
+    outlineVariant: '#44474E',
+    shadow: '#000000',
+    scrim: '#000000',
+    inverseSurface: '#E2E2E9',
+    inverseOnSurface: '#2E3036',
+    inversePrimary: '#415F91',
+    primaryFixed: '#D6E3FF',
+    onPrimaryFixed: '#001B3E',
+    primaryFixedDim: '#AAC7FF',
+    onPrimaryFixedVariant: '#284777',
+    secondaryFixed: '#DAE2F9',
+    onSecondaryFixed: '#131C2B',
+    secondaryFixedDim: '#BEC6DC',
+    onSecondaryFixedVariant: '#3E4759',
+    tertiaryFixed: '#CAEEA6',
+    onTertiaryFixed: '#0D2000',
+    tertiaryFixedDim: '#AFD18C',
+    onTertiaryFixedVariant: '#324E18',
+    surfaceDim: '#111318',
+    surfaceBright: '#37393E',
+    surfaceContainerLowest: '#0C0E13',
+    surfaceContainerLow: '#191C20',
+    surfaceContainer: '#1D2024',
+    surfaceContainerHigh: '#282A2F',
+    surfaceContainerHighest: '#33353A',
+  },
+  gap: (v: number) => v * 8,
+};
+
+const appThemes = {
+  light: lightTheme,
+  dark: darkTheme,
+};
+
+const breakpoints = {
+  xs: 0,
+  sm: 300,
+  md: 500,
+  lg: 800,
+  xl: 1200,
+};
+
+type AppBreakpoints = typeof breakpoints;
+type AppThemes = typeof appThemes;
+
+declare module 'react-native-unistyles' {
+  export interface UnistylesThemes extends AppThemes {}
+  export interface UnistylesBreakpoints extends AppBreakpoints {}
+}
+
+StyleSheet.configure({
+  settings: {
+    adaptiveThemes: true,
+  },
+  breakpoints,
+  themes: appThemes,
+});
