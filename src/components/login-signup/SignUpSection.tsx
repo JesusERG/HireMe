@@ -1,0 +1,46 @@
+import { Text, View } from 'react-native';
+import { useNavigation, NavigationProp } from '@react-navigation/native';
+import { StyleSheet } from 'react-native-unistyles';
+import { RootStackParamList } from '../../utils/types/Types';
+
+const SignUpSection = () => {
+  const navigation: NavigationProp<RootStackParamList> = useNavigation();
+  return (
+    <View style={styles.signInContainer}>
+      <Text style={styles.text}>Don't have an account? </Text>
+      <Text
+        onPress={() => {
+          navigation.navigate('SignUp');
+        }}
+        style={styles.textSignUp}
+      >
+        Sign Up!
+      </Text>
+    </View>
+  );
+};
+
+export default SignUpSection;
+
+const styles = StyleSheet.create(theme => ({
+  signInContainer: {
+    flex: 1,
+    flexDirection: 'row',
+  },
+  text: {
+    fontSize: {
+      xs: 15,
+      md: 23,
+      lg: 30,
+    },
+  },
+  textSignUp: {
+    fontSize: {
+      xs: 15,
+      md: 23,
+      lg: 30,
+    },
+    fontWeight: 'bold',
+    color: theme.colors.primary,
+  },
+}));

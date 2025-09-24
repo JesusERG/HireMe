@@ -51,6 +51,9 @@ const lightTheme = {
     surfaceContainer: '#EDEDF4',
     surfaceContainerHigh: '#E7E8EE',
     surfaceContainerHighest: '#E2E2E9',
+    white: '#F9F9FF',
+    black: '#000000',
+    facebookBlue: '#1a77f2',
   },
   gap: (v: number) => v * 8,
 };
@@ -106,6 +109,9 @@ const darkTheme = {
     surfaceContainer: '#1D2024',
     surfaceContainerHigh: '#282A2F',
     surfaceContainerHighest: '#33353A',
+    white: '#F9F9FF',
+    black: '#000000',
+    facebookBlue: '#1a77f2',
   },
   gap: (v: number) => v * 8,
 };
