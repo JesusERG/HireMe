@@ -1,7 +1,9 @@
 import { Pressable, Text, Image, View } from 'react-native';
 import { StyleSheet } from 'react-native-unistyles';
+import { useTranslation } from 'react-i18next';
 
 const GoogleSignIn = ({ handler }: { handler: any }) => {
+  const { t } = useTranslation();
   return (
     <Pressable style={styles.buttonContainerPrimary} onPress={handler}>
       <View style={styles.googleLogoContainer}>
@@ -11,7 +13,7 @@ const GoogleSignIn = ({ handler }: { handler: any }) => {
         />
       </View>
       <View style={styles.googleTextContainer}>
-        <Text style={[styles.buttonTextPrimary]}>Google Sign In</Text>
+        <Text style={[styles.buttonTextPrimary]}>{t('googleLogin')}</Text>
       </View>
     </Pressable>
   );
@@ -65,7 +67,7 @@ const styles = StyleSheet.create(theme => ({
     alignItems: 'center',
   },
   googleTextContainer: {
-    flex: 2,
+    flex: 3,
     justifyContent: 'center',
     alignItems: 'flex-start',
   },

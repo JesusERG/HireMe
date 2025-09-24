@@ -1,11 +1,13 @@
 import { Text, View } from 'react-native';
 import { StyleSheet } from 'react-native-unistyles';
+import { useTranslation } from 'react-i18next';
 
 const Separator = () => {
+  const { t } = useTranslation();
   return (
     <>
       <View style={styles.separator} />
-      <Text style={styles.text}> or </Text>
+      <Text style={styles.text}> {t('or')} </Text>
       <View style={styles.separator} />
     </>
   );
