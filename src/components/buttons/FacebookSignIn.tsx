@@ -1,7 +1,9 @@
 import { Pressable, Text, Image, View } from 'react-native';
 import { StyleSheet } from 'react-native-unistyles';
+import { useTranslation } from 'react-i18next';
 
 const FacebookSignIn = ({ handler }: { handler: any }) => {
+  const { t } = useTranslation();
   return (
     <Pressable style={styles.buttonContainerPrimary} onPress={handler}>
       <View style={styles.facebookLogoContainer}>
@@ -11,7 +13,7 @@ const FacebookSignIn = ({ handler }: { handler: any }) => {
         />
       </View>
       <View style={styles.facebookTextContainer}>
-        <Text style={[styles.buttonTextPrimary]}>Facebook Sign In</Text>
+        <Text style={[styles.buttonTextPrimary]}>{t('facebookLogin')}</Text>
       </View>
     </Pressable>
   );
@@ -60,7 +62,7 @@ const styles = StyleSheet.create(theme => ({
     alignItems: 'center',
   },
   facebookTextContainer: {
-    flex: 2,
+    flex: 3,
     justifyContent: 'center',
     alignItems: 'flex-start',
   },

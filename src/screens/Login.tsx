@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { StyleSheet } from 'react-native-unistyles';
 import { loginSchema, LoginFormInputs } from '../utils/types/ValidationSchemas';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useTranslation } from 'react-i18next';
 import LoginTitle from '../components/login-signup/LoginTitle';
 import RecoverySection from '../components/login-signup/RecoverySection';
 import CustomTextInput from '../components/forms/CustomTextInput';
@@ -15,6 +16,8 @@ import GoogleSignIn from '../components/buttons/GoogleSignIn';
 import FacebookSignIn from '../components/buttons/FacebookSignIn';
 
 const Login = () => {
+  const { t } = useTranslation();
+
   const { control, handleSubmit } = useForm<LoginFormInputs>({
     resolver: zodResolver(loginSchema),
     defaultValues: {
@@ -39,7 +42,7 @@ const Login = () => {
           />
           <CustomTextInput
             name="password"
-            placeholder="Password"
+            placeholder={t('password')}
             control={control}
             secureTextEntry={true}
           />
@@ -49,7 +52,7 @@ const Login = () => {
         <View style={styles.buttonContainer}>
           <View style={styles.button}>
             <PrimaryButton
-              title="Login"
+              title={t('login')}
               handler={handleSubmit(onSubmit)}
               type="primary"
             />

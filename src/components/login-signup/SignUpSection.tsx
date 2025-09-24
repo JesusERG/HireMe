@@ -2,19 +2,21 @@ import { Text, View } from 'react-native';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 import { StyleSheet } from 'react-native-unistyles';
 import { RootStackParamList } from '../../utils/types/Types';
+import { useTranslation } from 'react-i18next';
 
 const SignUpSection = () => {
+  const { t } = useTranslation();
   const navigation: NavigationProp<RootStackParamList> = useNavigation();
   return (
     <View style={styles.signInContainer}>
-      <Text style={styles.text}>Don't have an account? </Text>
+      <Text style={styles.text}>{t('noAccount')} </Text>
       <Text
         onPress={() => {
           navigation.navigate('SignUp');
         }}
         style={styles.textSignUp}
       >
-        Sign Up!
+        {t('signUp')}
       </Text>
     </View>
   );

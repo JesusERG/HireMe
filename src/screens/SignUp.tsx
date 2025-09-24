@@ -5,17 +5,17 @@ import { StyleSheet } from 'react-native-unistyles';
 import { loginSchema, LoginFormInputs } from '../utils/types/ValidationSchemas';
 import { zodResolver } from '@hookform/resolvers/zod';
 import LoginTitle from '../components/login-signup/LoginTitle';
-import RecoverySection from '../components/login-signup/RecoverySection';
 import CustomTextInput from '../components/forms/CustomTextInput';
 import PrimaryButton from '../components/buttons/CustomButton';
 import Logo from '../components/Logo';
 import Separator from '../components/login-signup/Separator';
-import SignUpSection from '../components/login-signup/SignUpSection';
 import GoogleSignIn from '../components/buttons/GoogleSignIn';
 import FacebookSignIn from '../components/buttons/FacebookSignIn';
 import AlreadyHaveAnAccount from '../components/login-signup/AlreadyHaveAnAccount';
+import { useTranslation } from 'react-i18next';
 
 const SignUp = () => {
+  const { t } = useTranslation();
   const { control, handleSubmit } = useForm<LoginFormInputs>({
     resolver: zodResolver(loginSchema),
     defaultValues: {
@@ -30,7 +30,7 @@ const SignUp = () => {
         <Logo size="small" />
       </View>
       <View style={styles.formContainer}>
-        <LoginTitle type="Sign Up" />
+        <LoginTitle type="signUp" />
         <View style={styles.textInputContainer}>
           <CustomTextInput
             name="name"
@@ -63,7 +63,7 @@ const SignUp = () => {
         <View style={styles.buttonContainer}>
           <View style={styles.button}>
             <PrimaryButton
-              title="Sign Up"
+              title={t('signUp')}
               handler={handleSubmit(onSubmit)}
               type="primary"
             />
