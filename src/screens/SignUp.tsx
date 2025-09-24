@@ -13,8 +13,9 @@ import Separator from '../components/login-signup/Separator';
 import SignUpSection from '../components/login-signup/SignUpSection';
 import GoogleSignIn from '../components/buttons/GoogleSignIn';
 import FacebookSignIn from '../components/buttons/FacebookSignIn';
+import AlreadyHaveAnAccount from '../components/login-signup/AlreadyHaveAnAccount';
 
-const Login = () => {
+const SignUp = () => {
   const { control, handleSubmit } = useForm<LoginFormInputs>({
     resolver: zodResolver(loginSchema),
     defaultValues: {
@@ -29,27 +30,40 @@ const Login = () => {
         <Logo size="small" />
       </View>
       <View style={styles.formContainer}>
-        <LoginTitle type="Login" />
+        <LoginTitle type="Sign Up" />
         <View style={styles.textInputContainer}>
+          <CustomTextInput
+            name="name"
+            placeholder="Name"
+            control={control}
+            secureTextEntry={true}
+          />
           <CustomTextInput
             name="email"
             placeholder="Email"
             control={control}
             secureTextEntry={false}
           />
+
           <CustomTextInput
             name="password"
             placeholder="Password"
             control={control}
             secureTextEntry={true}
           />
-          <RecoverySection />
+          <CustomTextInput
+            name="confirmPassword"
+            placeholder="Confirm Password"
+            control={control}
+            secureTextEntry={true}
+          />
+          <AlreadyHaveAnAccount />
         </View>
 
         <View style={styles.buttonContainer}>
           <View style={styles.button}>
             <PrimaryButton
-              title="Login"
+              title="Sign Up"
               handler={handleSubmit(onSubmit)}
               type="primary"
             />
@@ -69,11 +83,12 @@ const Login = () => {
             <FacebookSignIn handler={handleSubmit(onSubmit)} />
           </View>
         </View>
-        <SignUpSection />
       </View>
     </SafeAreaView>
   );
 };
+
+export default SignUp;
 
 const styles = StyleSheet.create(theme => ({
   mainContainer: {
@@ -91,6 +106,7 @@ const styles = StyleSheet.create(theme => ({
     flex: 8,
     width: '80%',
     justifyContent: 'center',
+    marginTop: -80,
   },
 
   textInputContainer: {
@@ -101,10 +117,8 @@ const styles = StyleSheet.create(theme => ({
   },
 
   logoContainer: {
-    flex: 3,
-
+    flex: 2,
     justifyContent: 'flex-end',
-    // backgroundColor: 'red',
   },
   buttonContainer: {
     width: '100%',
@@ -137,5 +151,3 @@ const styles = StyleSheet.create(theme => ({
     flex: 1,
   },
 }));
-
-export default Login;

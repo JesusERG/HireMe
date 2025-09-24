@@ -4,7 +4,7 @@ import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 export type RootStackParamList = {
   Splash: undefined;
   Login: undefined;
-  Signup: undefined;
+  SignUp: undefined;
   Feed: { sort: 'latest' | 'top' } | undefined;
   Profile: { userId: string };
 };

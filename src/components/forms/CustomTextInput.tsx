@@ -7,7 +7,6 @@ interface customTextInputProps {
   name: string;
   control: any;
   placeholder: string;
-  rules: any;
   secureTextEntry: boolean;
 }
 
@@ -15,21 +14,20 @@ const CustomTextInput = ({
   name,
   control,
   placeholder,
-  rules = {},
   secureTextEntry = false,
 }: customTextInputProps) => {
   return (
     <>
       <Controller
         control={control}
-        rules={rules}
         render={({
           field: { onChange, onBlur, value },
           fieldState: { error },
         }) => (
           <>
-            <View>
+            <View style={styles.textInputContainer}>
               <TextInput
+                style={styles.textInput}
                 placeholder={placeholder}
                 onBlur={onBlur}
                 onChangeText={onChange}
@@ -49,4 +47,21 @@ const CustomTextInput = ({
 
 export default CustomTextInput;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create(theme => ({
+  textInputContainer: {
+    flexDirection: 'row',
+    minWidth: 200,
+    height: {
+      xs: 45,
+      md: 55,
+      lg: 70,
+    },
+    // maxWidth: 700,
+  },
+  textInput: {
+    borderRadius: 10,
+    padding: 10,
+    backgroundColor: theme.colors.secondaryFixed,
+    flex: 1,
+  },
+}));
