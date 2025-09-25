@@ -35,74 +35,84 @@ const Feed = () => {
   }, [data]);
 
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.topContainer}>
-        <View style={{ flex: 2 }}>
-          <Image
-            style={styles.mainProfilePicture}
-            source={require('../assets/imgs/ProfilePicture.webp')}
-          />
-        </View>
-        <View style={styles.titleContainer}>
+    <SafeAreaView edges={['top']} style={styles.safeAreaContainer}>
+      <View style={styles.container}>
+        <View style={styles.topContainer}>
           <View
             style={{
-              flex: 1,
-              justifyContent: 'flex-end',
+              flex: 2,
+
+              justifyContent: 'center',
             }}
           >
-            <Text style={styles.text}>I'm Jesus Gonzalez </Text>
-          </View>
-          <View style={{ flex: 1 }}>
-            <TypeAnimation
-              sequence={[
-                { text: 'Mobile Developer' },
-                { text: 'Web Developer' },
-                { text: 'Systems Engineer' },
-                { text: 'Hamburguer Connoisseur' },
-              ]}
-              loop
-              delayBetweenSequence={1000}
-              style={styles.text}
+            <Image
+              style={styles.mainProfilePicture}
+              source={require('../assets/imgs/ProfilePicture.webp')}
             />
           </View>
+          <View style={styles.titleContainer}>
+            <View
+              style={{
+                flex: 1,
+                justifyContent: 'flex-end',
+              }}
+            >
+              <Text style={styles.text}>I'm Jesus Gonzalez </Text>
+            </View>
+            <View style={{ flex: 1 }}>
+              <TypeAnimation
+                sequence={[
+                  { text: 'Mobile Developer' },
+                  { text: 'Web Developer' },
+                  { text: 'Systems Engineer' },
+                  { text: 'Hamburguer Connoisseur' },
+                ]}
+                loop
+                delayBetweenSequence={1000}
+                style={styles.text}
+              />
+            </View>
+          </View>
         </View>
-      </View>
-      <View style={styles.feedContainer}>
-        <Text style={styles.text}>What have i been up to?</Text>
-        <FlatList
-          data={commits}
-          keyExtractor={(_, index) => index.toString()}
-          renderItem={({ item, index }) => (
-            <View style={styles.commitContainer}>
-              <View style={styles.userInfoContainer}>
-                <Image
-                  style={styles.profilePicture}
-                  source={require('../assets/imgs/ProfilePicture2.webp')}
-                />
-                <View style={styles.userInfo}>
-                  <View style={styles.userNameAndStatusContainer}>
-                    <Text>Jesús González</Text>
-                    <Image
-                      style={styles.verifiedCheckmark}
-                      source={require('../assets/imgs/VerifiedCheckmark.webp')}
-                    />
+        <View style={styles.feedContainer}>
+          <FlatList
+            data={commits}
+            keyExtractor={(_, index) => index.toString()}
+            renderItem={({ item, index }) => (
+              <View style={styles.commitContainer}>
+                <View style={styles.userInfoContainer}>
+                  <Image
+                    style={styles.profilePicture}
+                    source={require('../assets/imgs/ProfilePicture2.webp')}
+                  />
+                  <View style={styles.userInfo}>
+                    <View style={styles.userNameAndStatusContainer}>
+                      <Text style={styles.userName}>Jesús González</Text>
+                      <Image
+                        style={styles.verifiedCheckmark}
+                        source={require('../assets/imgs/VerifiedCheckmark.webp')}
+                      />
+                    </View>
+                    <Text style={styles.nameTag}>@Jesus.IT.Dev</Text>
                   </View>
-                  <Text>@Jesus.IT.Dev</Text>
+                </View>
+                <View style={styles.commitMessageContainer}>
+                  <Text style={styles.message}>{item}</Text>
+                </View>
+                <View style={styles.buttonContainer}>
+                  <Text style={styles.icon}>💬</Text>
+                  <Text style={styles.icon}>❤️</Text>
+                  <Text style={styles.icon}>⏎</Text>
+                  <Text style={styles.icon}>⎋</Text>
                 </View>
               </View>
-              <View style={styles.commitMessageContainer}>
-                <Text>{item}</Text>
-              </View>
-              <View style={styles.buttonContainer}>
-                <Text>💬</Text>
-                <Text>❤️</Text>
-                <Text>⏎</Text>
-                <Text>⎋</Text>
-              </View>
-            </View>
-          )}
-          ItemSeparatorComponent={() => <View style={styles.separator} />}
-        />
+            )}
+            ItemSeparatorComponent={() => <View style={styles.separator} />}
+            ListHeaderComponent={
+              <Text style={styles.text}>What have i been up to?</Text>
+            }
+          />
+        </View>
       </View>
     </SafeAreaView>
   );
@@ -115,7 +125,11 @@ const styles = StyleSheet.create((theme, rt) => ({
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
-    gap: { xs: 0, md: 10, lg: 25 },
+    gap: { xs: 10, md: 20, lg: 25 },
+  },
+  safeAreaContainer: {
+    backgroundColor: theme.colors.primary,
+    flex: 1,
   },
   titleContainer: {
     flex: 1,
@@ -134,10 +148,11 @@ const styles = StyleSheet.create((theme, rt) => ({
     flex: 3,
     justifyContent: 'center',
     alignItems: 'center',
-
+    backgroundColor: theme.colors.background,
     width: '100%',
   },
   text: {
+    textAlign: 'center',
     fontSize: {
       xs: 22,
       md: 35,
@@ -145,14 +160,19 @@ const styles = StyleSheet.create((theme, rt) => ({
     },
   },
   profilePicture: {
-    height: 50,
-    width: 50,
+    height: {
+      xs: rt.isLandscape ? rt.screen.height * 0.2 : rt.screen.width * 0.13,
+      md: rt.isLandscape ? rt.screen.height * 0.14 : rt.screen.width * 0.11,
+      lg: rt.isLandscape ? rt.screen.height * 0.08 : rt.screen.width * 0.08,
+    },
+    width: undefined,
+    aspectRatio: 1,
     borderRadius: '100%',
   },
   userInfoContainer: {
     flex: 1,
     flexDirection: 'row',
-    width: rt.screen.width * 0.9,
+    marginLeft: rt.isLandscape ? '5%' : 0,
   },
   userInfo: {
     flex: 1,
@@ -168,12 +188,16 @@ const styles = StyleSheet.create((theme, rt) => ({
     width: 15,
   },
   commitContainer: {
-    flex: 1,
     padding: 13,
-
+    minHeight: rt.isLandscape ? rt.screen.height * 0.2 : rt.screen.width * 0.2,
     width: rt.screen.width,
+    flex: 1,
   },
-  commitMessageContainer: { padding: 10 },
+  commitMessageContainer: {
+    padding: 10,
+    flex: 1,
+    marginLeft: rt.isLandscape ? '5%' : 0,
+  },
   separator: {
     borderBottomColor: theme.colors.inverseSurface,
     borderBottomWidth: 1,
@@ -186,27 +210,74 @@ const styles = StyleSheet.create((theme, rt) => ({
     gap: {
       xs: 0,
       md: 0,
-      lg: 30,
+      lg: 60,
     },
     marginRight: {
-      xs: 0,
-      md: 0,
-      lg: 30,
+      lg: '10%',
     },
+    marginBottom: {
+      lg: '2%',
+    },
+
+    // backgroundColor: 'red',
+  },
+  icon: {
+    transform: [
+      {
+        scale: {
+          md: 1.4,
+          lg: 2,
+        },
+      },
+    ],
   },
   mainProfilePicture: {
-    height: '100%',
+    height: '90%',
     width: undefined,
     aspectRatio: 1,
     borderRadius: '100%',
   },
   topContainer: {
-    flex: 2,
+    flex: {
+      xs: 1.6,
+      md: 2,
+      lg: 2,
+    },
     width: '100%',
-    gap: 10,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'blue',
+    backgroundColor: theme.colors.primary,
+    borderBottomStartRadius: rt.screen.width * 0.15,
+    borderBottomEndRadius: rt.screen.width * 0.15,
+    paddingBottom: {
+      xs: 0,
+      md: 15,
+      lg: 30,
+    },
+  },
+  userName: {
+    fontSize: {
+      xs: 15,
+      md: 20,
+      lg: 30,
+    },
+    fontWeight: 'bold',
+  },
+  nameTag: {
+    fontSize: {
+      xs: 13,
+      md: 17,
+      lg: 21,
+    },
+    fontStyle: 'italic',
+    opacity: 0.5,
+  },
+  message: {
+    fontSize: {
+      xs: 15,
+      md: 20,
+      lg: 30,
+    },
   },
 }));
 
