@@ -9,7 +9,7 @@ const GoogleSignIn = ({ handler }: { handler: any }) => {
       <View style={styles.googleLogoContainer}>
         <Image
           style={styles.googleLogo}
-          source={require('../../assets/imgs/GoogleLogo.png')}
+          source={require('../../assets/imgs/GoogleLogo.webp')}
         />
       </View>
       <View style={styles.googleTextContainer}>
