@@ -36,7 +36,7 @@ const styles = StyleSheet.create(theme => ({
 
   buttonTextPrimary: {
     textAlign: 'left',
-    color: theme.colors.black,
+    color: theme.colors.white,
     fontSize: {
       xs: 20,
       md: 25,
