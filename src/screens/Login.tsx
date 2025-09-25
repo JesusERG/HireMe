@@ -5,6 +5,8 @@ import { StyleSheet } from 'react-native-unistyles';
 import { loginSchema, LoginFormInputs } from '../utils/types/ValidationSchemas';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useTranslation } from 'react-i18next';
+import { useNavigation, NavigationProp } from '@react-navigation/native';
+import { RootStackParamList } from '../utils/types/Types';
 import LoginTitle from '../components/login-signup/LoginTitle';
 import RecoverySection from '../components/login-signup/RecoverySection';
 import CustomTextInput from '../components/forms/CustomTextInput';
@@ -17,6 +19,7 @@ import FacebookSignIn from '../components/buttons/FacebookSignIn';
 
 const Login = () => {
   const { t } = useTranslation();
+  const navigation = useNavigation<NavigationProp<RootStackParamList>>();
 
   const { control, handleSubmit } = useForm<LoginFormInputs>({
     resolver: zodResolver(loginSchema),
@@ -53,7 +56,9 @@ const Login = () => {
           <View style={styles.button}>
             <PrimaryButton
               title={t('login')}
-              handler={handleSubmit(onSubmit)}
+              handler={() => {
+                navigation.navigate('Feed');
+              }}
               type="primary"
             />
           </View>
