@@ -57,7 +57,7 @@ const Login = () => {
             <PrimaryButton
               title={t('login')}
               handler={() => {
-                navigation.navigate('Feed');
+                navigation.navigate('TabNavFeed');
               }}
               type="primary"
             />

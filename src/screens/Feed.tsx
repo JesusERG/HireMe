@@ -5,6 +5,7 @@ import { TypeAnimation } from 'react-native-type-animation';
 import { useGetUserActivityQuery } from '../redux/slices/apis/githubApiSlice';
 import { UserActivity } from '../utils/types/Types';
 import { useEffect, useState } from 'react';
+import TabNavigatorFeed from '../navigation/TabNavigatorFeed';
 
 const Feed = () => {
   const { data, error, isLoading } = useGetUserActivityQuery();
