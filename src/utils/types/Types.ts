@@ -7,6 +7,7 @@ export type RootStackParamList = {
   SignUp: undefined;
   Feed: { sort: 'latest' | 'top' } | undefined;
   Profile: { userId: string };
+  TabNavFeed: undefined;
 };
 
 export type Props = NativeStackScreenProps<RootStackParamList>;

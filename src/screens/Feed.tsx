@@ -34,6 +34,24 @@ const Feed = () => {
     if (data) getCommitsFromUserActivity(data);
   }, [data]);
 
+  if (isLoading)
+    return (
+      <SafeAreaView edges={['top']} style={styles.safeAreaContainer}>
+        <View style={styles.container}>
+          <Text>Loading...</Text>
+        </View>
+      </SafeAreaView>
+    );
+
+  if (error)
+    return (
+      <SafeAreaView edges={['top']} style={styles.safeAreaContainer}>
+        <View style={styles.container}>
+          <Text>Error</Text>
+        </View>
+      </SafeAreaView>
+    );
+
   return (
     <SafeAreaView edges={['top']} style={styles.safeAreaContainer}>
       <View style={styles.container}>
@@ -74,6 +92,11 @@ const Feed = () => {
             </View>
           </View>
         </View>
+
+        <View style={styles.subTitleContainer}>
+          <Text style={styles.text}>What have i been up to?</Text>
+        </View>
+
         <View style={styles.feedContainer}>
           <FlatList
             data={commits}
@@ -108,9 +131,6 @@ const Feed = () => {
               </View>
             )}
             ItemSeparatorComponent={() => <View style={styles.separator} />}
-            ListHeaderComponent={
-              <Text style={styles.text}>What have i been up to?</Text>
-            }
           />
         </View>
       </View>
@@ -120,7 +140,7 @@ const Feed = () => {
 
 const styles = StyleSheet.create((theme, rt) => ({
   container: {
-    backgroundColor: theme.colors.background,
+    backgroundColor: theme.colors.white,
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
@@ -144,12 +164,53 @@ const styles = StyleSheet.create((theme, rt) => ({
     // flexWrap: 'wrap',
     width: '80%',
   },
+  topContainer: {
+    flex: {
+      xs: 1.6,
+      md: 2,
+      lg: 2.4,
+    },
+    width: '100%',
+    justifyContent: 'center',
+    // flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: theme.colors.primary,
+    borderBottomStartRadius: rt.screen.width * 0.1,
+    borderBottomEndRadius: rt.screen.width * 0.1,
+    // borderBottomStartRadius: rt.screen.width * 0.15,
+    // borderBottomEndRadius: rt.screen.width * 0.15,
+    paddingBottom: {
+      xs: 0,
+      md: 15,
+      lg: 30,
+    },
+    borderColor: theme.colors.black,
+    borderWidth: 1,
+    borderTopWidth: 0,
+  },
   feedContainer: {
     flex: 3,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: theme.colors.background,
     width: '100%',
+    borderTopStartRadius: rt.screen.width * 0.1,
+    borderTopEndRadius: rt.screen.width * 0.1,
+    // borderTopStartRadius: rt.screen.width * 0.15,
+    // borderTopEndRadius: rt.screen.width * 0.15,
+
+    paddingHorizontal: rt.isLandscape
+      ? 0
+      : {
+          xs: 0,
+          md: 20,
+          lg: 40,
+        },
+    borderColor: theme.colors.black,
+    borderTopWidth: 0.3,
+    borderLeftWidth: 0.3,
+    borderRightWidth: 0.3,
+    overflow: 'hidden',
   },
   text: {
     textAlign: 'center',
@@ -237,24 +298,7 @@ const styles = StyleSheet.create((theme, rt) => ({
     aspectRatio: 1,
     borderRadius: '100%',
   },
-  topContainer: {
-    flex: {
-      xs: 1.6,
-      md: 2,
-      lg: 2,
-    },
-    width: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: theme.colors.primary,
-    borderBottomStartRadius: rt.screen.width * 0.15,
-    borderBottomEndRadius: rt.screen.width * 0.15,
-    paddingBottom: {
-      xs: 0,
-      md: 15,
-      lg: 30,
-    },
-  },
+
   userName: {
     fontSize: {
       xs: 15,
@@ -279,6 +323,7 @@ const styles = StyleSheet.create((theme, rt) => ({
       lg: 30,
     },
   },
+  subTitleContainer: {},
 }));
 
 export default Feed;

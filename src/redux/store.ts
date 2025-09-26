@@ -1,15 +1,17 @@
 import { configureStore } from '@reduxjs/toolkit';
 import themeReducer from './slices/themeSlice';
 import { githubApi } from './slices/apis/githubApiSlice';
+import { wordleApi } from './slices/apis/wordleApiSlice';
 import { setupListeners } from '@reduxjs/toolkit/query';
 
 export const store = configureStore({
   reducer: {
     theme: themeReducer,
     [githubApi.reducerPath]: githubApi.reducer,
+    [wordleApi.reducerPath]: wordleApi.reducer,
   },
   middleware: getDefaultMiddleware =>
-    getDefaultMiddleware().concat(githubApi.middleware),
+    getDefaultMiddleware().concat(githubApi.middleware, wordleApi.middleware),
 });
 
 setupListeners(store.dispatch);

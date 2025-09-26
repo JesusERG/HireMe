@@ -3,7 +3,8 @@ import { RootStackParamList } from '../utils/types/Types';
 import Splash from '../screens/Splash';
 import Login from '../screens/Login';
 import SignUp from '../screens/SignUp';
-import Feed from '../screens/Feed';
+// import Feed from '../screens/Feed';
+import TabNavigatorFeed from './TabNavigatorFeed';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -26,8 +27,8 @@ const StackNavigator = () => {
         options={{ headerShown: false }}
       />
       <Stack.Screen
-        name="Feed"
-        component={Feed}
+        name="TabNavFeed"
+        component={TabNavigatorFeed}
         options={{ headerShown: false, animation: 'fade_from_bottom' }}
       />
     </Stack.Navigator>
