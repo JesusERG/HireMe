@@ -2,6 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import themeReducer from './slices/themeSlice';
 import { githubApi } from './slices/apis/githubApiSlice';
 import { wordleApi } from './slices/apis/wordleApiSlice';
+import { ecommerceApi } from './slices/apis/ecommerceApiSlice';
 import { setupListeners } from '@reduxjs/toolkit/query';
 
 export const store = configureStore({
@@ -9,9 +10,14 @@ export const store = configureStore({
     theme: themeReducer,
     [githubApi.reducerPath]: githubApi.reducer,
     [wordleApi.reducerPath]: wordleApi.reducer,
+    [ecommerceApi.reducerPath]: ecommerceApi.reducer,
   },
   middleware: getDefaultMiddleware =>
-    getDefaultMiddleware().concat(githubApi.middleware, wordleApi.middleware),
+    getDefaultMiddleware().concat(
+      githubApi.middleware,
+      wordleApi.middleware,
+      ecommerceApi.middleware,
+    ),
 });
 
 setupListeners(store.dispatch);
