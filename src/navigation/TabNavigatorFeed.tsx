@@ -15,9 +15,21 @@ function TabNavigatorFeed() {
         component={Feed}
         options={{ headerShown: false }}
       />
-      <Tab.Screen name="Wordle" component={Wordle} />
-      <Tab.Screen name="Ecommerce" component={Ecomerce} />
-      <Tab.Screen name="User" component={User} />
+      <Tab.Screen
+        name="Wordle"
+        component={Wordle}
+        options={{ headerShown: false }}
+      />
+      <Tab.Screen
+        name="Ecommerce"
+        component={Ecomerce}
+        options={{ headerShown: false }}
+      />
+      <Tab.Screen
+        name="User"
+        component={User}
+        options={{ headerShown: false }}
+      />
     </Tab.Navigator>
   );
 }
