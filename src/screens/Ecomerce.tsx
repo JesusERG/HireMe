@@ -67,35 +67,6 @@ const Ecomerce = () => {
   //Filter
   useEffect(() => {
     if (filter !== '') {
-      // setProductList(filteredList);
-      // switch (filter) {
-      //   case 'rating':
-      //     const sortedList = products.products.sort(
-      //       (a: Product, b: Product) => a.rating - b.rating,
-      //     );
-      //     // setFilteredList(sortedList);
-      //     break;
-      //   case 'price':
-      //     setFilteredList(
-      //       products.products.sort(
-      //         (a: Product, b: Product) => a.price - b.price,
-      //       ),
-      //     );
-      //     break;
-      //   case 'discount':
-      //     setFilteredList(
-      //       products.products.sort(
-      //         (a: Product, b: Product) =>
-      //           a.discountPercentage - b.discountPercentage,
-      //       ),
-      //     );
-      //     break;
-
-      //   default:
-      //     break;
-      // }
-      console.log('entreeeeee');
-
       let sortedList = [...productList].sort((a: Product, b: Product) => {
         switch (filter) {
           case 'ratingDesc':
@@ -114,8 +85,6 @@ const Ecomerce = () => {
             return 0;
         }
       });
-      console.log('saliiiii');
-      console.log('sortedList:', sortedList);
       setFilteredList(sortedList);
     }
   }, [filter]);
@@ -123,14 +92,8 @@ const Ecomerce = () => {
   if (isLoading) return <Text>Loading...</Text>;
   if (error) return <Text>Error</Text>;
 
-  console.log('userSearch:', userSearch);
-  console.log('silter:', filter);
-  console.log('category:', category);
-
   const dataToRender =
     userSearch || category || filter ? filteredList : products.products;
-
-  console.log('dataToRender:', dataToRender);
 
   return (
     <SafeAreaView edges={['top']} style={styles.mainContainer}>
