@@ -1,15 +1,39 @@
-import { StyleSheet, Text, View, Image, Pressable, Button } from 'react-native';
+import { StyleSheet, Text, View, Image, Pressable } from 'react-native';
 import * as ImagePicker from 'react-native-image-picker';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { storage } from '../../utils/mmkv/mmkv';
 
 const UserTopContainer = () => {
   const { t } = useTranslation();
   const [response, setResponse] = useState<any>(null);
-  const onButtonPress = useCallback((options: any) => {
-    console.log('preesssded');
-    ImagePicker.launchImageLibrary(options, setResponse);
+
+  useEffect(() => {
+    if (storage.getString('profilePicture')) {
+      const jsonPP = storage.getString('profilePicture');
+      if (jsonPP == null) {
+        console.log('jsonPP is null');
+        return;
+      }
+      const PPObjetc = JSON.parse(jsonPP);
+      setResponse(PPObjetc);
+    }
   }, []);
+
+  const onButtonPress = useCallback(
+    (options: any) => {
+      console.log('preesssded');
+      ImagePicker.launchImageLibrary(options, setResponse);
+      storage.set('profilePicture', JSON.stringify(response));
+      const jsonPP = storage.getString('profilePicture'); // { 'username': 'Marc', 'age': 21 }
+      if (jsonPP == null) {
+        console.log('jsonPP is null');
+        return;
+      }
+      const PPObjetc = JSON.parse(jsonPP);
+    },
+    [response],
+  );
   return (
     <View style={styles.mainContainer}>
       <Pressable
