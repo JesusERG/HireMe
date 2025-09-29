@@ -38,20 +38,23 @@ const ProductListFilters = ({ setFilter }: any) => {
   };
   return (
     <View style={styles.mainContainer}>
-      <Pressable onPress={() => handleToggleFilter('ratingAsc')}>
-        <View style={styles.filterContainer}>
-          <Text>⭐️ Rating</Text>
-        </View>
+      <Pressable
+        style={styles.filterContainer}
+        onPress={() => handleToggleFilter('ratingAsc')}
+      >
+        <Text>⭐️ Rating</Text>
       </Pressable>
-      <Pressable onPress={() => handleToggleFilter('priceAsc')}>
-        <View style={styles.filterContainer}>
-          <Text>💲 Price</Text>
-        </View>
+      <Pressable
+        style={styles.filterContainer}
+        onPress={() => handleToggleFilter('priceAsc')}
+      >
+        <Text>💲 Price</Text>
       </Pressable>
-      <Pressable onPress={() => handleToggleFilter('discountAsc')}>
-        <View style={styles.filterContainer}>
-          <Text>‼️ Discount</Text>
-        </View>
+      <Pressable
+        style={styles.filterContainer}
+        onPress={() => handleToggleFilter('discountAsc')}
+      >
+        <Text>‼️ Discount</Text>
       </Pressable>
     </View>
   );

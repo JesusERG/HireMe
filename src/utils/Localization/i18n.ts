@@ -25,6 +25,33 @@ const resources = {
       confirmPassword: 'Confirm Password',
       yesAccount: 'Already have an account?',
       signIn: 'Sign in here',
+
+      // User
+      user: 'User',
+      payment: 'Payment',
+      settings: 'Settings',
+      hi: 'Hi',
+      logout: 'Logout',
+
+      //UserInfo
+      username: 'Username',
+      changeProfilePicture: 'Change profile picture',
+
+      //Payment
+      paymentMethod: 'Payment Method',
+      cardNumber: 'Card Number',
+      cvv: 'CVV',
+      expirationDate: 'Expiration Date',
+
+      // Settings
+      theme: 'Theme',
+      language: 'Language',
+      changeLanguage: 'Change Language',
+      logout: 'Logout',
+
+      //Modal
+      modalCancel: 'Cancel',
+      modalConfirm: 'Confirm',
     },
   },
   es: {
@@ -47,6 +74,33 @@ const resources = {
       confirmPassword: 'Confirmar Contraseña',
       yesAccount: '¿Ya tienes una cuenta?',
       signIn: 'Ingresa aquí',
+
+      // User
+      user: 'Usuario',
+      payment: 'Pago',
+      settings: 'Configuración',
+      hi: 'Hola',
+      logout: 'Cerrar sesión',
+
+      //UserInfo
+      username: 'Nombre de usuario',
+      changeProfilePicture: 'Cambiar foto de perfil',
+
+      //Payment
+      paymentMethod: 'Método de pago',
+      cardNumber: 'Número de tarjeta',
+      cvv: 'CVV',
+      expirationDate: 'Fecha de expiración',
+
+      // Settings
+      theme: 'Tema',
+      language: 'Idioma',
+      changeLanguage: 'Cambiar idioma',
+      logout: 'Cerrar sesión',
+
+      //Modal
+      modalCancel: 'Cancelar',
+      modalConfirm: 'Confirmar',
     },
   },
 };
