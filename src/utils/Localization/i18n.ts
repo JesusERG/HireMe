@@ -31,7 +31,6 @@ const resources = {
       payment: 'Payment',
       settings: 'Settings',
       hi: 'Hi',
-      logout: 'Logout',
 
       //UserInfo
       username: 'Username',
@@ -80,7 +79,6 @@ const resources = {
       payment: 'Pago',
       settings: 'Configuración',
       hi: 'Hola',
-      logout: 'Cerrar sesión',
 
       //UserInfo
       username: 'Nombre de usuario',

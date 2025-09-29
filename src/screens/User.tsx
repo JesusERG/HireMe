@@ -1,4 +1,4 @@
-import { Image, Pressable, Text, View } from 'react-native';
+import { Pressable, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StyleSheet } from 'react-native-unistyles';
 import { useState } from 'react';
@@ -7,6 +7,7 @@ import PaymentInfo from '../components/user/PaymentInfo';
 import SettingsInfo from '../components/user/SettingsInfo';
 import ModalUser from '../components/user/ModalUser';
 import { useTranslation } from 'react-i18next';
+import UserTopContainer from '../components/user/UserTopContainer';
 
 const User = () => {
   const { t } = useTranslation();
@@ -23,11 +24,7 @@ const User = () => {
     <SafeAreaView edges={['top']} style={styles.mainContainer}>
       <View style={styles.userSectionContainer}>
         <View style={styles.informationContainer}>
-          <Image
-            style={styles.mainProfilePicture}
-            source={require('../assets/imgs/ProfilePicture.webp')}
-          />
-          <Text style={styles.greetingText}>{t('hi')}</Text>
+          <UserTopContainer />
         </View>
         <View style={styles.optionsContainer}>
           <Pressable
@@ -87,7 +84,7 @@ const styles = StyleSheet.create(theme => ({
     alignItems: 'center',
   },
   optionsContainer: {
-    flex: 3,
+    flex: 2,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: theme.colors.secondary,
@@ -103,14 +100,5 @@ const styles = StyleSheet.create(theme => ({
   },
   optionText: {
     fontSize: 30,
-  },
-  mainProfilePicture: {
-    width: 100,
-    height: 100,
-    borderRadius: 50,
-  },
-  greetingText: {
-    fontSize: 35,
-    fontWeight: 'bold',
   },
 }));
