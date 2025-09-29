@@ -13,14 +13,11 @@ const Feed = () => {
   const getCommitsFromUserActivity = (activity: UserActivity[]) => {
     activity.map((item: UserActivity) => {
       if (item.payload.commits) {
-        console.log('comit content: ', item.payload.commits);
         item.payload.commits.forEach(commit => {
-          console.log(' message: ', commit.message);
           setCommits(prevCommits => [...prevCommits, commit.message]);
         });
       }
     });
-    console.log('comits:', commits);
     // const commitsArray = activity.map(
     //   (item: UserActivity) => item.payload.commits,
     // );

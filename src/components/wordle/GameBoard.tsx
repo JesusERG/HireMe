@@ -39,25 +39,22 @@ const GameBoard = () => {
       {Array(6)
         .fill('')
         .map((_, outerIndex) => (
-          <>
-            {/* <Tile key={index} solution={data} index={index} /> */}
-            <View key={outerIndex} style={styles.boardContainer}>
-              {Array(5)
-                .fill('')
-                .map((_, innerIndex) => (
-                  <Tile
-                    key={outerIndex.toString() + innerIndex.toString()}
-                    solution={solution}
-                    index={innerIndex.toString()}
-                    currentRow={currentRow}
-                    row={outerIndex}
-                    setCurrentRow={setCurrentRow}
-                    setGuess={setGuess}
-                    guess={guess}
-                  />
-                ))}
-            </View>
-          </>
+          <View key={outerIndex} style={styles.boardContainer}>
+            {Array(5)
+              .fill('')
+              .map((_, innerIndex) => (
+                <Tile
+                  key={outerIndex.toString() + innerIndex.toString()}
+                  solution={solution}
+                  index={innerIndex.toString()}
+                  currentRow={currentRow}
+                  row={outerIndex}
+                  setCurrentRow={setCurrentRow}
+                  setGuess={setGuess}
+                  guess={guess}
+                />
+              ))}
+          </View>
         ))}
     </View>
   );
