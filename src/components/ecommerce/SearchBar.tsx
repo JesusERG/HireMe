@@ -1,12 +1,23 @@
 import { TextInput, Text, View } from 'react-native';
 import { StyleSheet } from 'react-native-unistyles';
 
-const SearchBar = () => {
+const SearchBar = ({
+  userSearch,
+  setUserSearch,
+}: {
+  userSearch: string;
+  setUserSearch: any;
+}) => {
   return (
     <View style={styles.searchBarContainer}>
       <>
         <Text> 🔍</Text>
-        <TextInput style={styles.searchBar} placeholder="Search" />
+        <TextInput
+          style={styles.searchBar}
+          placeholder="Search"
+          value={userSearch}
+          onChangeText={setUserSearch}
+        />
       </>
       <Text>🎙️</Text>
     </View>

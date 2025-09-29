@@ -9,7 +9,10 @@ const Tab = createBottomTabNavigator();
 
 function TabNavigatorFeed() {
   return (
-    <Tab.Navigator tabBar={props => <TabBar {...props} />}>
+    <Tab.Navigator
+      initialRouteName="Feed"
+      tabBar={props => <TabBar {...props} />}
+    >
       <Tab.Screen
         name="Feed"
         component={Feed}
@@ -23,7 +26,9 @@ function TabNavigatorFeed() {
       <Tab.Screen
         name="Ecommerce"
         component={Ecomerce}
-        options={{ headerShown: false }}
+        options={{
+          headerShown: false,
+        }}
       />
       <Tab.Screen
         name="User"

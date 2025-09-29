@@ -41,6 +41,7 @@ function TabBar({ state, descriptors, navigation }: any) {
 
         return (
           <PlatformPressable
+            key={route.key}
             href={buildHref(route.name, route.params)}
             accessibilityState={isFocused ? { selected: true } : {}}
             accessibilityLabel={options.tabBarAccessibilityLabel}
@@ -82,8 +83,9 @@ export default TabBar;
 const styles = StyleSheet.create((theme, rt) => ({
   container: {
     flexDirection: 'row',
-    height: rt.screen.height * 0.05,
+    height: rt.screen.height * 0.06,
     alignItems: 'center',
+    // paddingVertical: 10,
   },
   tabSection: {
     flex: 1,

@@ -10,13 +10,16 @@ import { NavigationContainer } from '@react-navigation/native';
 import StackNavigator from './src/navigation/StackNavigator';
 import { store } from './src/redux/store';
 import { Provider } from 'react-redux';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 function App() {
   return (
     <NavigationContainer>
       <Provider store={store}>
         <SafeAreaProvider>
-          <StackNavigator />
+          <GestureHandlerRootView>
+            <StackNavigator />
+          </GestureHandlerRootView>
         </SafeAreaProvider>
       </Provider>
     </NavigationContainer>
